@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--Developed by Geilson Silva. Follow me on Instagram and Linkedin: @Geilson Fidelis-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calculadora Aritmética</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Aritmética</h1>
+
+        <!-- Formulário para entrada de valores e operador -->
+        <form id="calculator-form">
+            <input type="number" id="value1" placeholder="Valor 1" required>
+            <input type="number" id="value2" placeholder="Valor 2" required>
+            <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <button type="button" onclick="calculate()">Calcular</button>
+        </form>
+
+        <!-- Resultado da operação exibido aqui -->
+        <div id="result">
+            Resultado: <span id="calc-result"></span>
+            Sobras: <span id="remainder"></span>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
